@@ -1,0 +1,51 @@
+@use "../../scss/" as *;
+.tf-team {
+    background: $bg-3;
+}
+
+.home-2 {
+    .tf-team {
+        padding: 91px 0 51px;
+    }
+}
+
+.about {
+    .tf-team {
+        padding: 91px 0 0;
+        background: transparent;
+    }
+}
+.box-navigation {
+    display: flex;
+    gap: 17px;
+    margin-top: 60px;
+    .navigation {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 48px;
+        min-height: 48px;
+        background: transparent;
+        padding: 0;
+        line-height: 20px;
+        border: 1px solid #14c2a3;
+        font-family: "Font Awesome 5 Pro";
+        font-size: 30px;
+        font-weight: 100;
+        color: #fff;
+    }
+    .swiper-button-disabled {
+        background: #14c2a3;
+    }
+
+}
+@include mobile {
+    .box-navigation{
+        margin-top: 30px;
+    }
+}
